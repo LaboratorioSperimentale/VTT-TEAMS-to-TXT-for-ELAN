@@ -3,14 +3,12 @@ import re
 from pathlib import Path
 
 ###############################################
-# AI SUPPORT GENERATION  
+# GENERATION AI SUPPORTED  
 # CARMELO C. - LABORATORIO SPERIMENTALE LILEC
 # UNIVERSITA' DI BOLOGNA
 ###############################################
 
-
 # FROM THIS: 
-
 """
 e371828e-7f70-4cb4-a3fb-18243967b8ca/30-0
 00:00:03.332 --> 00:00:12.192
@@ -19,9 +17,8 @@ non sentiamo noi, però ***** c'ha primis.</v>
 """
 
 # TO THIS:
-
 """
-# Tommaso Pellin	00:00:03	00:00:09	Ti senti vero? Non sentiamo lei, non sentiamo noi, però ***** c'ha primis.
+# tommaso pellin	00:00:03	00:00:09	ti senti vero? non sentiamo lei, non sentiamo noi, però ***** c'ha primis.
 """
 
 def clean_timestamp(ts):
@@ -60,7 +57,9 @@ def process_vtt_file(file_path, output_dir):
             start_time = clean_timestamp(start_raw.strip())
             end_time = clean_timestamp(end_raw.strip())
 
-            output_lines.append(f"# {speaker}\t{start_time}\t{end_time}\t{text}")
+            # Convert output line to lowercase
+            output_line = f"# {speaker}\t{start_time}\t{end_time}\t{text}".lower()
+            output_lines.append(output_line)
 
         i += 1
 

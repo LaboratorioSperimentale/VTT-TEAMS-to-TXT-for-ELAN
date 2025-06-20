@@ -4,13 +4,13 @@ FROM THIS:
 """
 e371828e-7f70-4cb4-a3fb-18243967b8ca/30-0
 00:00:03.332 --> 00:00:12.192
-<v Tommaso Pellin>Ti senti vero? Non sentiamo lei,
-non sentiamo noi, però ***** c'ha primis.</v>
+<v NOME>Some sentence here.
+More here.</v>
 """
 
 TO THIS:
 """
-# tommaso pellin	00:00:03	00:00:09	ti senti vero? non sentiamo lei, non sentiamo noi, però ***** c'ha primis.
+# nome	00:00:03	00:00:09	some sentence here. more here.
 """
 
 

@@ -3,7 +3,7 @@ import re
 from pathlib import Path
 
 ###############################################
-# AI GENERATED
+# AI SUPPORT GENERATION  
 # CARMELO C. - LABORATORIO SPERIMENTALE LILEC
 # UNIVERSITA' DI BOLOGNA
 ###############################################
